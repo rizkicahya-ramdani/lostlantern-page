@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost Lantern Studio - Illuminating Worlds with Interactive Stories</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @font-face {
+            font-family: 'VCR_OSD_MONO_1.001';
+            src: url('./fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        body {
+            font-family: 'VCR_OSD_MONO_1.001', sans-serif;
+        }
+
+        /* Neon Text Effect */
+        .text-glow {
+            text-shadow: 0 0 8px rgba(192, 132, 252, 0.8), 0 0 10px rgba(192, 132, 252, 0.6);
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-purple': {
+                            'light': '#a78bfa',
+                            'DEFAULT': '#8b5cf6',
+                            'dark': '#7c3aed',
+                        },
+                        'dark-bg': '#111827',
+                    },
+                    boxShadow: {
+                        'glow-purple': '0 0 15px rgba(168, 85, 247, 0.6)',
+                        'glow-purple-lg': '0 0 30px rgba(168, 85, 247, 0.5)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-bg text-gray-200 antialiased">
+
+    <header class="bg-dark-bg/80 backdrop-blur-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white text-glow">
+                Lost Lantern
+            </a>
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="#about" class="hover:text-brand-purple transition-colors duration-300">About Us</a></li>
+                <li><a href="#games" class="hover:text-brand-purple transition-colors duration-300">Our Games</a></li>
+                <li><a href="#careers" class="hover:text-brand-purple transition-colors duration-300">Careers</a></li>
+                <li><a href="#contact" class="bg-brand-purple hover:bg-brand-purple-dark text-white font-bold py-2 px-4 rounded-full transition-all duration-300 shadow-glow-purple hover:shadow-lg">Contact Us</a></li>
+            </ul>
+             <button class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="min-h-screen flex items-center justify-center bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-900/30 via-dark-bg to-dark-bg" style="background-image: url('img/heroes-loop.gif'); background-size: cover; background-position: center;">
+            <div class="text-center container mx-auto px-6">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white uppercase tracking-wider text-glow">
+                    Lost Lantern
+                </h1>
+                <p class="text-lg md:text-2xl text-gray-300 mt-4 max-w-3xl mx-auto">
+                    Illuminating Worlds with Interactive Stories and Unforgettable Experiences.
+                </p>
+                <div class="mt-10">
+                    <a href="#games" class="bg-brand-purple text-white font-bold text-lg py-3 px-8 rounded-full inline-block transition-all duration-300 transform hover:scale-105 shadow-glow-purple hover:shadow-glow-purple-lg">
+                        Explore Our Games
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-white">About <span class="text-brand-purple">Lost Lantern</span></h2>
+                    <div class="w-24 h-1 bg-brand-purple mx-auto mt-4 rounded"></div>
+                </div>
+                <div class="max-w-4xl mx-auto text-center text-gray-300 text-lg leading-relaxed">
+                    <p>
+                        We are a passionate group of developers, artists, and storytellers united by a single goal: to create games that not only entertain but also leave a lasting impression. Like a lantern in the dark, we believe games have the power to illuminate, inspire, and connect people all over the world.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-white">Our Featured Games</h2>
+                    <p class="text-gray-400 mt-2">A few of the worlds we've crafted.</p>
+                    <div class="w-24 h-1 bg-brand-purple mx-auto mt-4 rounded"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="bg-gray-800 rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <div class="relative">
+                            <img src="https://via.placeholder.com/600x400/1f2937/8b5cf6?text=Replace+Game+Image+1" alt="Game 1" class="w-full h-56 object-cover">
+                            <div class="absolute inset-0 bg-black/50 group-hover:bg-brand-purple/70 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                                <h3 class="text-white text-2xl font-bold">Game Title One</h3>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-400">A brief description of this game. Explore ancient ruins and uncover a hidden mystery.</p>
+                            <a href="#" class="inline-block mt-4 text-brand-purple-light font-semibold hover:text-white transition-colors">Learn More &rarr;</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800 rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <div class="relative">
+                            <img src="https://via.placeholder.com/600x400/1f2937/8b5cf6?text=Replace+Game+Image+2" alt="Game 2" class="w-full h-56 object-cover">
+                            <div class="absolute inset-0 bg-black/50 group-hover:bg-brand-purple/70 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                                <h3 class="text-white text-2xl font-bold">Project Title Two</h3>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-400">A cyberpunk adventure in a neon city that never sleeps. Survive and fight back.</p>
+                            <a href="#" class="inline-block mt-4 text-brand-purple-light font-semibold hover:text-white transition-colors">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-800 rounded-lg overflow-hidden group transform hover:-translate-y-2 transition-transform duration-300 shadow-lg">
+                        <div class="relative">
+                            <img src="https://via.placeholder.com/600x400/1f2937/8b5cf6?text=Coming+Soon" alt="Game 3" class="w-full h-56 object-cover">
+                            <div class="absolute inset-0 bg-black/50 group-hover:bg-brand-purple/70 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+                                <h3 class="text-white text-2xl font-bold">Coming Soon</h3>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <p class="text-gray-400">Our next secret project. Get ready for something truly new and exciting.</p>
+                            <a href="#" class="inline-block mt-4 text-brand-purple-light font-semibold hover:text-white transition-colors">Follow Our Progress &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="careers" class="py-20 bg-gray-900/50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-white">Join Us</h2>
+                <div class="w-24 h-1 bg-brand-purple mx-auto mt-4 rounded"></div>
+                <p class="max-w-2xl mx-auto mt-6 text-lg text-gray-300">
+                    We are always looking for talented individuals with a passion for creating magic. If you feel called to light the lantern with us, check out our available positions.
+                </p>
+                <div class="mt-8">
+                    <a href="mailto:careers@lostlantern.com" class="bg-transparent border-2 border-brand-purple text-brand-purple font-bold text-lg py-3 px-8 rounded-full inline-block transition-all duration-300 hover:bg-brand-purple hover:text-white hover:shadow-glow-purple">
+                        View Openings
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="contact" class="bg-gray-900">
+        <div class="container mx-auto px-6 py-10">
+            <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold text-white text-glow">Lost Lantern</h3>
+                    <p class="text-gray-400">Lighting up the world, one game at a time.</p>
+                    <a href="mailto:contact@lostlantern.com" class="text-brand-purple-light hover:text-white mt-2 inline-block">contact@lostlantern.com</a>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-brand-purple transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg></a>
+                    <a href="#" class="text-gray-400 hover:text-brand-purple transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg></a>
+                    <a href="#" class="text-gray-400 hover:text-brand-purple transition-colors"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.237 2.635 7.855 6.357 9.312-.229.086-.437.26-.588.463a6.388 6.388 0 00-.737 2.068.56.56 0 00.64.656 12.022 12.022 0 004.97-2.365A10.023 10.023 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm-1.04 14.512L8.98 14.53a.75.75 0 011.08-1.04l1.94 1.94 3.94-3.94a.75.75 0 111.08 1.08l-4.48 4.48a.75.75 0 01-1.08 0l-1.48-1.48z" clip-rule="evenodd" /></svg></a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-800 pt-6 text-center text-gray-500 text-sm">
+                <p>&copy; 2025 Lost Lantern Studio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
